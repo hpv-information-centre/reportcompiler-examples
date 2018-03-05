@@ -1,0 +1,11 @@
+\section{Track list}
+\begin{itemize}
+	\BLOCK{for album in ctx.albums}
+	\item{\VAR{album.title | escape_tex}}
+	\begin{itemize}
+		\BLOCK{for track_info in album.tracks}
+		\item{\VAR{track_info.name | escape_tex}: \VAR{track_info.duration}}
+		\BLOCK{endfor}
+	\end{itemize}
+	\BLOCK{endfor}
+\end{itemize}
