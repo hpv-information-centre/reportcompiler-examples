@@ -18,7 +18,7 @@ data_fetcher = {
                 }
 
 
-def generate_context(doc_var, data, metadata):
+def generate_context(doc_param, data, metadata):
     df = data['albums']
     albums_titles = list(df.ix[:, 'album'])
     return {

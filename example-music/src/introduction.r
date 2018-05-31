@@ -11,7 +11,7 @@ data_fetcher <- list(
 						)
 					)
 					
-generate_context <- function(doc_var, data, metadata) {
+generate_context <- function(doc_param, data, metadata) {
 	df <- data$artist
 	return(list(
 				artist=list(

@@ -27,7 +27,7 @@ data_fetcher = {
                 }
 
 
-def generate_context(doc_var, data, metadata):
+def generate_context(doc_param, data, metadata):
     df = data['tracks']
     df_groups = df.groupby('album').groups
     albums = []
