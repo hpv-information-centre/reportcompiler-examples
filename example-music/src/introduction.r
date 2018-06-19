@@ -1,4 +1,4 @@
-data_fetcher <- list(
+data_fetchers <- list(
 					list(	name='artist',
 							type='sqlite', 
 							file='chinook.db',

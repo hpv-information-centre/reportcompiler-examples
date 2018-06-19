@@ -1,4 +1,4 @@
-data_fetcher = {
+data_fetchers = {
                     'name': 'tracks',
                     'type': 'sqlite',
                     'file': 'chinook.db',

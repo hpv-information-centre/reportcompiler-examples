@@ -1,4 +1,4 @@
-data_fetcher = {
+data_fetchers = {
                     'name': 'albums',
                     'type': 'sqlite',
                     'file': 'chinook.db',
