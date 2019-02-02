@@ -29,21 +29,21 @@ Once generated, the output (in *gen/<doc_name>/out*) is a PDF document with a li
 
 .. code:: python
 
- from reportcompiler.reports import Report
+ from reportcompiler.documents import DocumentSpecification
 
  report_path = '/home/user/reports/example-music'
- report = Report(report_path)
+ report = DocumentSpecification(report_path)
  report.generate({'artist_id': 1})
 
 The report specification can also be obtained via git repository:
 
 .. code:: python
 
- from reportcompiler.reports import Report
+ from reportcompiler.documents import DocumentSpecification
 
  root_reports_path = '/home/user/reports'
  repo_url = 'https://github.com/hpv-information-centre/reportcompiler-examples'
- report = Report(root_reports_path,
+ report = DocumentSpecification(root_reports_path,
                  repo_url=repo_url,
                  repo_relative_path='example-music')
  report.generate({'artist_id': 1})
